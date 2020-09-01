@@ -42,8 +42,8 @@
 		3672AF311F4CF91FEBDB0E69 /* Pods_DDDAdMsgViewSdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDDAdMsgViewSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38561D4B6AD17E589FDA9E26 /* Pods-DDDAdMsgViewSdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDDAdMsgViewSdk_Example.debug.xcconfig"; path = "Target Support Files/Pods-DDDAdMsgViewSdk_Example/Pods-DDDAdMsgViewSdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4C86F6D9565CB894694E7903 /* Pods-DDDAdMsgViewSdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDDAdMsgViewSdk_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DDDAdMsgViewSdk_Tests/Pods-DDDAdMsgViewSdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		534FFF17E0C3B940D4E1AF3A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5BBBCFCD09499645ADD68A4F /* DDDAdMsgViewSdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DDDAdMsgViewSdk.podspec; path = ../DDDAdMsgViewSdk.podspec; sourceTree = "<group>"; };
+		534FFF17E0C3B940D4E1AF3A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5BBBCFCD09499645ADD68A4F /* DDDAdMsgViewSdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DDDAdMsgViewSdk.podspec; path = ../DDDAdMsgViewSdk.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DDDAdMsgViewSdk_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDDAdMsgViewSdk_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		975F0A8FD00212845E7BE114 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		975F0A8FD00212845E7BE114 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F9EAAE5BEFC9D646DBA66BE2 /* Pods-DDDAdMsgViewSdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDDAdMsgViewSdk_Example.release.xcconfig"; path = "Target Support Files/Pods-DDDAdMsgViewSdk_Example/Pods-DDDAdMsgViewSdk_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				4C86F6D9565CB894694E7903 /* Pods-DDDAdMsgViewSdk_Tests.debug.xcconfig */,
 				362336AE43D990F2E68F484B /* Pods-DDDAdMsgViewSdk_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,6 +497,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDDAdMsgViewSdk/DDDAdMsgViewSdk-Prefix.pch";
 				INFOPLIST_FILE = "DDDAdMsgViewSdk/DDDAdMsgViewSdk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +514,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDDAdMsgViewSdk/DDDAdMsgViewSdk-Prefix.pch";
 				INFOPLIST_FILE = "DDDAdMsgViewSdk/DDDAdMsgViewSdk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

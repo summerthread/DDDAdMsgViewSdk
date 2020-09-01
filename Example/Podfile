@@ -1,9 +1,9 @@
-use_frameworks!
-
-platform :ios, '8.0'
+platform:ios,’9.0’
+source 'https://github.com/CocoaPods/Specs.git'
+inhibit_all_warnings!
 
 target 'DDDAdMsgViewSdk_Example' do
-  pod 'DDDAdMsgViewSdk', :path => '../'
+#  pod 'DDDAdMsgViewSdk', :path => '../'
 
   target 'DDDAdMsgViewSdk_Tests' do
     inherit! :search_paths
