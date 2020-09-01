@@ -1,0 +1,16 @@
+PODS:
+  - DDDAdMsgViewSdk (0.1.0)
+
+DEPENDENCIES:
+  - DDDAdMsgViewSdk (from `../`)
+
+EXTERNAL SOURCES:
+  DDDAdMsgViewSdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DDDAdMsgViewSdk: 10bbb5939637e64c18d9a3021331a5282bc941fe
+
+PODFILE CHECKSUM: d77f3e14ad62445f05c143d0dcbee4f66b2faf13
+
+COCOAPODS: 1.9.2

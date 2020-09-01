@@ -1,0 +1,6 @@
+framework module DDDAdMsgViewSdk {
+  umbrella header "DDDAdMsgViewSdk-umbrella.h"
+
+  export *
+  module * { export * }
+}

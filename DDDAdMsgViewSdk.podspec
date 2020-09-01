@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DDDAdMsgViewSdk'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DDDAdMsgViewSdk.'
+  s.version          = '1.0.0.1'
+  s.summary          = '咨询列表'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,13 +30,22 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DDDAdMsgViewSdk/Classes/**/*'
+  # 是否使用静态库。如果podfile指明了use_frameworks!命令，但是pod仓库需要使用静态库则需要设置
+  s.static_framework = true
+  s.requires_arc = true
   
-  # s.resource_bundles = {
-  #   'DDDAdMsgViewSdk' => ['DDDAdMsgViewSdk/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.xcconfig         = { 'OTHER_LDFLAGS' => '-ObjC'}
+  #s.resource = 'DDDAdMsgViewSdk/Assets/DDDAdSdk.bundle'
+  s.vendored_frameworks = 'DDDAdMsgViewSdk/Classes/DDDAdMsgViewSdk.framework' #工程依赖的第三方framework
+  
+  ss.dependency 'AFNetworking', '~> 4.0.1'
+  s.dependency 'Bytedance-UnionAD', '~> 3.2.0.1'
+  s.dependency 'GDTMobSDK', '~> 4.11.10'
+  s.dependency 'JXCategoryView', '~> 1.5.6'
+  s.dependency 'MJRefresh', '~> 3.5.0'
+  s.dependency 'Masonry', '~> 1.1.0'
+  s.dependency 'CYLTableViewPlaceHolder', '~> 1.0.9'
+  s.dependency 'SDWebImage', '~> 5.8.4'
+  
 end
